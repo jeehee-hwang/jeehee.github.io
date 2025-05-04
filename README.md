@@ -1,5 +1,3 @@
-# D-study.github.io
-
 <!DOCTYPE html>
 <html>
    <head>
