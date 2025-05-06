@@ -1,0 +1,74 @@
+Java 형변환( 문자, 정수, 실수)
+
+문자 -> 숫자
+1. String to Int
+자바 Integer클래스의 parseInt함수와 valueOf 함수를 사용하여 변환이 가능하다.
+
+String num = "10";
+
+int i_num = Integer.parseInt(num); // 첫번째 방식
+int i_num2 = Integer.valueOf(num); // 두번째 방식
+
+2. String to Double,Float
+자바 Long, Double, Float 클래스의 parseLong 함수와 valueOf 함수를 사용하여 변환이 가능하다.
+
+String num = "10";
+
+double d_num = Double.valueOf(num); // String -> Double
+float f_num = Float.valueOf(num); // String -> Float
+
+3. String to Long, Short
+자바 Long,Short 클래스의 parseLong 함수와 parseShort 함수를 사용하여 변환이 가능하다.
+
+String num = "10";
+
+long l_num = Long.parseLong(num); // String -> Long
+short s_num = Short.parseShort(num); // String -> Short
+
+
+숫자 -> 문자
+1. Int to String
+자바 String 클래스의 valueOf, toString 함수를 사용하여 변환이 가능하다.
+
+int num = 10;
+
+String s_num = String.valueOf(num); // 첫번째 방식
+String s_num = Integer.toString(num); // 두번째 방식
+
+2. Double, Flaot to String
+자바 String 클래스의 valueof, toString 함수를 사용하여 변환이 가능하다.
+
+float f_num = 10.1;
+double d_num = 10.1;
+
+String s_num;
+
+s_num = String.valueOf(f_num); // Float -> String  
+s_num = String.valueOf(d_num); // Double -> String
+
+s_num = Float.toString(f_num); // Flaot -> String
+s_num = Double.toString(d_num); // Double -> String
+
+정수 <-> 실수
+1. Dobule, Float to Int
+실수를 정수로 변환하는 방식 (Int)캐스팅 방식을 사용한다.
+이때, 실수형의 소수점 아래자리는 모두 버려진다.
+
+double d_num = 10.11;
+float f_num = 10.111;
+
+int i_num;
+
+i_num  = (int)d_num; // Double -> Int
+i_num = (int)f_num; // Float -> Int
+
+2. Int to Double, Float
+정수을 실수로 변환하는 방식 (Double, Float)캐스팅 방식을 사용한다.
+
+int i_num = 10;
+
+double d_num = (double)i_num; // Int -> Double
+float f_num = (float)i_num; // Int -> Float
+
+
+
